@@ -1,9 +1,30 @@
 {
   "name": "rn-simple-alert-banner",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": false,
   "peerDependencies": {
     "react": "^16.0.0",
     "react-native": "^0.59.0"
-  }
+  },
+  "description": "This is a sample component I built that us used to display banners in React Native applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TStupariu/rn-simple-alert-banner.git"
+  },
+  "keywords": [
+    "React",
+    "Native",
+    "alert",
+    "banner"
+  ],
+  "author": "Tudor Stupariu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TStupariu/rn-simple-alert-banner/issues"
+  },
+  "homepage": "https://github.com/TStupariu/rn-simple-alert-banner#readme"
 }
