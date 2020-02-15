@@ -16,24 +16,25 @@ class MessageBanner extends Component {
   }
 
   showMessage = (data) => {
-    if (typeof data === 'object') {
+    if (data.Component) {
+      this.setState({
+        data: {
+          ...data,
+          type: 'function'
+        }
+      })
+    } else {
       this.setState({
         data: {
           ...data,
           type: 'object'
         }
       })
-    } else {
-      this.setState({
-        data: {
-          Component: data,
-          type: 'function'
-        }
-      })
     }
 
     this.slideIn()
-    this.hideTimeout = setTimeout(() => this.hideMessage(), 2000)
+    const { timeout = 3000 } = data
+    this.hideTimeout = setTimeout(() => this.hideMessage(), timeout)
   }
 
   hideMessage = () => {

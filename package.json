@@ -1,0 +1,9 @@
+{
+  "name": "rn-simple-alert-banner",
+  "version": "0.0.1",
+  "private": false,
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-native": "^0.59.0"
+  }
+}

@@ -9,9 +9,14 @@ const MessageManager = () => {
     messageRef.current.showMessage(data)
   }
 
+  const hide = () => {
+    messageRef.current.hideMessage()
+  }
+
   return {
     init,
-    show
+    show,
+    hide
   }
 }
 
